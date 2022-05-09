@@ -49,13 +49,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR = document.getElementById("modalCard1-PR");
         modalPR.innerHTML = listaPlanetas[0].rotation_period;
         let modalAgua = document.getElementById("modalCard1-agua");
-        let agua;
-        if (listaPlanetas[0].surface_water == 1){
-            agua = "Possui Água";
-        } else{
-            agua = "Não possui água";
-        }
-        modalAgua.innerHTML = agua;
+        modalAgua.innerHTML = listaPlanetas[0].surface_water;
+        let modalFilme = document.getElementById("modalCard1-filme");
+        filmes = listaPlanetas[0].films;
+        modalFilme.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/tatooinePlanet.webp");
 
         let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -75,13 +72,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR1 = document.getElementById("modalCard2-PR");
         modalPR1.innerHTML = listaPlanetas[1].rotation_period;
         let modalAgua1 = document.getElementById("modalCard2-agua");
-        let agua1;
-        if (listaPlanetas[1].surface_water == 1){
-            agua1 = "Possui Água";
-        } else{
-            agua1 = "Não possui água";
-        }
-        modalAgua1.innerHTML = agua;
+        modalAgua1.innerHTML = listaPlanetas[1].surface_water;
+        let modalFilme1 = document.getElementById("modalCard2-filme");
+        filmes = listaPlanetas[1].films;
+        modalFilme1.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/AlderaanPlanet.webp");
 
     } else if (id == "pagina2") {
@@ -117,13 +111,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR = document.getElementById("modalCard1-PR");
         modalPR.innerHTML = listaPlanetas[2].rotation_period;
         let modalAgua = document.getElementById("modalCard1-agua");
-        let agua;
-        if (listaPlanetas[2].surface_water == 1){
-            agua = "Possui Água";
-        } else{
-            agua = "Não possui água";
-        }
-        modalAgua.innerHTML = agua;
+        modalAgua.innerHTML = listaPlanetas[2].surface_water;
+        let modalFilme = document.getElementById("modalCard1-filme");
+        filmes = listaPlanetas[2].films;
+        modalFilme.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/yavin4Planet.webp");
 
         let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -143,13 +134,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR1 = document.getElementById("modalCard2-PR");
         modalPR1.innerHTML = listaPlanetas[3].rotation_period;
         let modalAgua1 = document.getElementById("modalCard2-agua");
-        let agua1;
-        if (listaPlanetas[3].surface_water == 1){
-            agua1 = "Possui Água";
-        } else{
-            agua1 = "Não possui água";
-        }
-        modalAgua1.innerHTML = agua;
+        modalAgua1.innerHTML = listaPlanetas[3].surface_water;
+        let modalFilme1 = document.getElementById("modalCard2-filme");
+        filmes = listaPlanetas[3].films;
+        modalFilme1.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard2-img","Imagens/hothPlanet.webp");
         
 
@@ -186,13 +174,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR = document.getElementById("modalCard1-PR");
         modalPR.innerHTML = listaPlanetas[4].rotation_period;
         let modalAgua = document.getElementById("modalCard1-agua");
-        let agua;
-        if (listaPlanetas[4].surface_water == 1){
-            agua = "Possui Água";
-        } else{
-            agua = "Não possui água";
-        }
-        modalAgua.innerHTML = agua;
+        modalAgua.innerHTML = listaPlanetas[4].surface_water;
+        let modalFilme = document.getElementById("modalCard1-filme");
+        filmes = listaPlanetas[4].films;
+        modalFilme.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/dagobahPlanet.webp");
 
         let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -212,13 +197,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR1 = document.getElementById("modalCard2-PR");
         modalPR1.innerHTML = listaPlanetas[5].rotation_period;
         let modalAgua1 = document.getElementById("modalCard2-agua");
-        let agua1;
-        if (listaPlanetas[5].surface_water == 1){
-            agua1 = "Possui Água";
-        } else{
-            agua1 = "Não possui água";
-        }
-        modalAgua1.innerHTML = agua;
+        modalAgua1.innerHTML = listaPlanetas[5].surface_water ;
+        let modalFilme1 = document.getElementById("modalCard2-filme");
+        filmes = listaPlanetas[5].films;
+        modalFilme1.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard2-img","Imagens/bespinPlanet.webp");
 
     } else if (id == "pagina4") {
@@ -254,13 +236,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR = document.getElementById("modalCard1-PR");
         modalPR.innerHTML = listaPlanetas[6].rotation_period;
         let modalAgua = document.getElementById("modalCard1-agua");
-        let agua;
-        if (listaPlanetas[6].surface_water == 1){
-            agua = "Possui Água";
-        } else{
-            agua = "Não possui água";
-        }
-        modalAgua.innerHTML = agua;
+        modalAgua.innerHTML = listaPlanetas[6].surface_water ;
+        let modalFilme = document.getElementById("modalCard1-filme");
+        filmes = listaPlanetas[6].films;
+        modalFilme.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/endorPlanet.jpg");
 
         let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -280,13 +259,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR1 = document.getElementById("modalCard2-PR");
         modalPR1.innerHTML = listaPlanetas[7].rotation_period;
         let modalAgua1 = document.getElementById("modalCard2-agua");
-        let agua1;
-        if (listaPlanetas[7].surface_water == 1){
-            agua1 = "Possui Água";
-        } else{
-            agua1 = "Não possui água";
-        }
-        modalAgua1.innerHTML = agua;
+        modalAgua1.innerHTML = listaPlanetas[7].surface_water ;
+        let modalFilme1 = document.getElementById("modalCard2-filme");
+        filmes = listaPlanetas[7].films;
+        modalFilme1.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard2-img","Imagens/nabooPlanet.webp");
 
     } else if (id == "pagina5"){
@@ -322,13 +298,10 @@ const ativarPaginacao=(element,id)=>{
         let modalPR = document.getElementById("modalCard1-PR");
         modalPR.innerHTML = listaPlanetas[8].rotation_period;
         let modalAgua = document.getElementById("modalCard1-agua");
-        let agua;
-        if (listaPlanetas[8].surface_water == 1){
-            agua = "Possui Água";
-        } else{
-            agua = "Não possui água";
-        }
-        modalAgua.innerHTML = agua;
+        modalAgua.innerHTML = listaPlanetas[8].surface_water ;
+        let modalFilme = document.getElementById("modalCard1-filme");
+        filmes = listaPlanetas[0].films;
+        modalFilme.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard1-img","Imagens/coruscantPlanet.webp");
 
         let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -348,20 +321,42 @@ const ativarPaginacao=(element,id)=>{
         let modalPR1 = document.getElementById("modalCard2-PR");
         modalPR1.innerHTML = listaPlanetas[9].rotation_period;
         let modalAgua1 = document.getElementById("modalCard2-agua");
-        let agua1;
-        if (listaPlanetas[9].surface_water == 1){
-            agua1 = "Possui Água";
-        } else{
-            agua1 = "Não possui água";
-        }
-        modalAgua1.innerHTML = agua;
+        modalAgua1.innerHTML = listaPlanetas[9].surface_water ;
+        let modalFilme1 = document.getElementById("modalCard2-filme");
+        filmes = listaPlanetas[9].films;
+        modalFilme1.innerHTML = buscaFilmes(filmes);
         colocarImg("modalCard2-img","Imagens/kaminoPlanet.webp");
     }
     
 }
 
+function buscaFilmes(listaFilmes){
+    let filmes = [];
+    for (let i = 0; i < listaFilmes.length; i++) {
+        let texto = listaFilmes[i];
+        let result = texto.substr(28,1);
+
+        if (result == "1") {
+            filmes.push("A New Hope (episode IV)");
+        } else if(result == "2"){
+            filmes.push("The Empire Strikes Back (episode V)");
+        } else if(result == "3"){
+            filmes.push("Return of the Jedi (episode VI)");
+        } else if(result == 4){
+            filmes.push("The Phantom Menace (episode I)");
+        } else if(result == 5){
+            filmes.push("Attack of the Clones (episode II)");
+        } else if(result == 6){
+            filmes.push("Revenge of the Sith (episode III)");
+        }
+    }
+    
+    return String(filmes);
+}
+
 function main() {
-    let dados = fazGet("https://swapi.dev/api/planets/");
+    link = "https://swapi.dev/api/planets/";
+    let dados = fazGet(link);
     let dataPlanetas = JSON.parse(dados);
     let listaPlanetas = dataPlanetas.results;
     console.log(listaPlanetas);
@@ -400,13 +395,10 @@ function main() {
     let modalPR = document.getElementById("modalCard1-PR");
     modalPR.innerHTML = listaPlanetas[0].rotation_period;
     let modalAgua = document.getElementById("modalCard1-agua");
-    let agua;
-    if (listaPlanetas[0].surface_water == 1){
-        agua = "Possui Água";
-    } else{
-        agua = "Não possui água";
-    }
-    modalAgua.innerHTML = agua;
+    modalAgua.innerHTML = listaPlanetas[0].surface_water;
+    let modalFilme = document.getElementById("modalCard1-filme");
+    filmes = listaPlanetas[0].films;
+    modalFilme.innerHTML = buscaFilmes(filmes);
     colocarImg("modalCard1-img","Imagens/tatooinePlanet.webp");
 
     let modalTitulo1 = document.getElementById("modalCard2-titulo");
@@ -426,13 +418,10 @@ function main() {
     let modalPR1 = document.getElementById("modalCard2-PR");
     modalPR1.innerHTML = listaPlanetas[1].rotation_period;
     let modalAgua1 = document.getElementById("modalCard2-agua");
-    let agua1;
-    if (listaPlanetas[1].surface_water == 1){
-        agua1 = "Possui Água";
-    } else{
-        agua1 = "Não possui água";
-    }
-    modalAgua1.innerHTML = agua;
+    modalAgua1.innerHTML = listaPlanetas[1].surface_water;
+    let modalFilme1 = document.getElementById("modalCard2-filme");
+    filmes = listaPlanetas[1].films;
+    modalFilme1.innerHTML = buscaFilmes(filmes);
     colocarImg("modalCard2-img","Imagens/AlderaanPlanet.webp");
 }
 
